@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+foo:
+  list:
+    - name: my name
+      description: my description
+---
+spring:
+  profiles: dev
+foo:
+  list:
+    - name: my another name

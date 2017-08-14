@@ -1,0 +1,13 @@
+
+my:
+   servers:
+       -  dev.bar.com
+       -  foo.bar.com
+       -  goo.bar.com
+---
+spring:
+    profiles: dev
+my:
+   servers:
+       - dev.bar1.com
+       - foo.bar1.com

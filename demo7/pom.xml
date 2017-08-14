@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>life.qzzs.springboot</groupId>
-	<artifactId>springboot.demo5</artifactId>
+	<groupId>life.qzz.springboot</groupId>
+	<artifactId>springboot.demo7</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo5</name>
-	<description>application.properties的位置,file:./config/，file:./ 需要打包成jar包之后，在jar包的目录新建config目录</description>
+	<name>demo7</name>
+	<description>YAML list配置</description>
 
 	<parent>
 		<groupId>life.qzz</groupId>
@@ -37,16 +37,6 @@
 	</dependencies>
 
 	<build>
-		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**/*.properties</include></includes>
-			</resource>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
