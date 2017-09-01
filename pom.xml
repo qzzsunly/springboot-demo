@@ -10,7 +10,8 @@
         <module>demo2</module>
         <module>demo6</module>
     <module>springboot.demo8</module>
-  </modules>
+        <module>demo9</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
