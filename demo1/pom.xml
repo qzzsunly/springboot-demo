@@ -36,6 +36,13 @@
                 <!--使用boot的maven插件来方便运行boot应用-->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -61,4 +68,12 @@
 
     <name>不基于parent starter</name>
     <description>不继承parent starter,通过使用maven的type=import来保持依赖管理的特性</description>
+    <properties>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <resource.delimiter>@</resource.delimiter>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
 </project>
