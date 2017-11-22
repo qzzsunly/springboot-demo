@@ -1,16 +1,16 @@
 package life.qzz.springboot.demo;
 
-
-import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
 
-@EnableAutoConfiguration
-@Configurable
-@ComponentScan
+/**
+ * <pre>
+ * 描述：
+ * @author : qzz
+ * 日期:2017/11/21
+ * </pre>
+ */
 public class App {
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(Config.class, args);
     }
 }
